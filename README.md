@@ -1,5 +1,7 @@
 # kotlin_dom_xml_parser
-example code of kotlin dom xml parser for android:
+You can also visit my blog https://kotlintutorialbd.wordpress.com/2019/02/11/kotlin-dom-xml-parser-for-android-app/ . Also the screen shot of this code is also given there.
+
+Example code of kotlin dom xml parser for android:
 
 STEP 1:
 At first, Create the XML file name, empdetail.xml in src/main/assets directory to parse the data using DOM parser.If there is no such directory, create one. and the code can be like :

@@ -8,6 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="#eee"
+        android:paddingBottom="2dp"
         android:orientation="vertical">
 
         <TextView
@@ -20,23 +22,24 @@
             android:layout_marginStart="15dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
+
         <TextView
-            android:id="@+id/salary"
+            android:id="@+id/ratings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="salary"
+            android:text="rating"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            android:textSize="16sp"/>
+            android:textSize="15sp"/>
         <TextView
-            android:id="@+id/designation"
+            android:id="@+id/role"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="designation"
+            android:text="role"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            android:textSize="16sp"/>
+            android:textSize="15sp"/>
     </LinearLayout>
 </LinearLayout>

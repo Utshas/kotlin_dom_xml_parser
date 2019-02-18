@@ -2,12 +2,14 @@ package com.example.xmlparse
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ListView
 import android.widget.SimpleAdapter
+import android.widget.ListView
 import org.w3c.dom.Element
 import org.w3c.dom.Node
+import org.xml.sax.InputSource
 import org.xml.sax.SAXException
 import java.io.IOException
+import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 import javax.xml.parsers.ParserConfigurationException
 
@@ -15,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     var empDataHashMap = HashMap<String, String>()
     var empList: ArrayList<HashMap<String,String>> = ArrayList()
+    //var url = URL("http://a.cdn.searchspring.net/help/feeds/sample.xml")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +28,9 @@ class MainActivity : AppCompatActivity() {
             val builderFactory = DocumentBuilderFactory.newInstance()
             val docBuilder = builderFactory.newDocumentBuilder()
             val doc = docBuilder.parse(istream)
-            // reading employee tags
-            val nList = doc.getElementsByTagName("employee")
+            //val doc = docBuilder.parse(InputSource(url.openStream()))
+            // reading player tags
+            val nList = doc.getElementsByTagName("player")
             for(i in 0 until nList.length)
             {
                 if(nList.item(0).nodeType.equals(Node.ELEMENT_NODE))
@@ -34,13 +38,13 @@ class MainActivity : AppCompatActivity() {
                     empDataHashMap = HashMap()
                     val element = nList.item(i) as Element
                     empDataHashMap.put("name", getNodeValue("name",element))
-                    empDataHashMap.put("name", getNodeValue("name",element))
-                    empDataHashMap.put("name", getNodeValue("name",element))
+                    empDataHashMap.put("ratings", getNodeValue("ratings",element))
+                    empDataHashMap.put("role", getNodeValue("role",element))
 
                     empList.add(empDataHashMap)
                 }
             }
-            val adapter = SimpleAdapter(this@MainActivity, empList, R.layout.custom_list, arrayOf("name", "salary", "designation"), intArrayOf(R.id.name, R.id.salary, R.id.designation))
+            val adapter = SimpleAdapter(this@MainActivity, empList, R.layout.custom_list, arrayOf("name", "ratings", "role"), intArrayOf(R.id.name, R.id.ratings, R.id.role))
             lv.setAdapter(adapter)
         }
         catch (e: IOException){

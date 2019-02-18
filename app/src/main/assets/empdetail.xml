@@ -1,63 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<records>
-    <employee>
-        <name>Sachin Kumar</name>
-        <salary>50000</salary>
-        <designation>Developer</designation>
-    </employee>
-    <employee>
-        <name>Rahul Kumar</name>
-        <salary>60000</salary>
-        <designation>Team Leader</designation>
-    </employee>
-    <employee>
-        <name>John Mike</name>
-        <salary>70000</salary>
-        <designation>Manager</designation>
-    </employee>
-    <employee>
-        <name>Ajay Kumar</name>
-        <salary>45000</salary>
-        <designation>Developer</designation>
-    </employee>
-    <employee>
-        <name>Toni Nayer</name>
-        <salary>55000</salary>
-        <designation>Marketing</designation>
-    </employee>
-    <employee>
-        <name>Mr Bony</name>
-        <salary>42000</salary>
-        <designation>Sales</designation>
-    </employee>
-    <employee>
-        <name>Raj Kumar</name>
-        <salary>30000</salary>
-        <designation>Production</designation>
-    </employee>
-    <employee>
-        <name>Rahul Kumar</name>
-        <salary>60000</salary>
-        <designation>Team Leader</designation>
-    </employee>
-    <employee>
-        <name>John Mike</name>
-        <salary>70000</salary>
-        <designation>Manager</designation>
-    </employee>
-    <employee>
-        <name>Sachin Kumar</name>
-        <salary>50000</salary>
-        <designation>Developer</designation>
-    </employee>
-    <employee>
-        <name>Rahul Kumar</name>
-        <salary>60000</salary>
-        <designation>Team Leader</designation>
-    </employee>
-    <employee>
-        <name>John Mike</name>
-        <salary>70000</salary>
-        <designation>Manager</designation>
-    </employee>
-</records>
+<emplayers>
+    <player>
+        <name>Tazwar Utshas</name>
+        <ratings>550</ratings>
+        <role>Captain</role>
+    </player>
+    <player>
+        <name>Matthew Hayden</name>
+        <ratings>455</ratings>
+        <role>Opener</role>
+    </player>
+    <player>
+        <name>Habibul Basher</name>
+        <ratings>555</ratings>
+        <role>Vice Captain</role>
+    </player>
+    <player>
+        <name>Khaled Masud</name>
+        <ratings>425</ratings>
+        <role>Wicket Keeper</role>
+    </player>
+    <player>
+        <name>Md. Rafiq</name>
+        <ratings>350</ratings>
+        <role>Spinner</role>
+    </player>
+    <player>
+        <name>Mashrafee Mortaza</name>
+        <ratings>650</ratings>
+        <role>Pacer</role>
+    </player>
+    <player>
+        <name>Wasim Akram</name>
+        <ratings>750</ratings>
+        <role>All Rounder</role>
+    </player>
+    <player>
+        <name>Sachin Tendulker</name>
+        <ratings>550</ratings>
+        <role>Middle Order</role>
+    </player>
+    <player>
+        <name>Ricky Ponting</name>
+        <ratings>650</ratings>
+        <role>Middle Order</role>
+    </player>
+    <player>
+        <name>Adam Gilchrist</name>
+        <ratings>750</ratings>
+        <role>Opener</role>
+    </player>
+    <player>
+        <name>Kumara Sangakkara</name>
+        <ratings>550</ratings>
+        <role>Keeper Batsman</role>
+    </player>
+    <player>
+        <name>Sanath Jayasuria</name>
+        <ratings>755</ratings>
+        <role>Back up opener</role>
+    </player>
+    <player>
+        <name>Shoaib Akhter</name>
+        <ratings>650</ratings>
+        <role>Pacer</role>
+    </player>
+    <player>
+        <name>Brett Lee</name>
+        <ratings>750</ratings>
+        <role>Pacer</role>
+    </player>
+</emplayers>

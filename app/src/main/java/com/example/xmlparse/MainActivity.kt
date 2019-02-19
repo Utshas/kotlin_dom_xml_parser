@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     var empDataHashMap = HashMap<String, String>()
     var empList: ArrayList<HashMap<String,String>> = ArrayList()
     // xml parse from url link isn't working
+    
     //var url = URL("http://a.cdn.searchspring.net/help/feeds/sample.xml")
 
     override fun onCreate(savedInstanceState: Bundle?) {

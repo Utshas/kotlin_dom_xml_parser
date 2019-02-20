@@ -1,7 +1,6 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/kotlin_dom_xml_parser
     docker:
       - image: circleci/android:api-25-alpha
     environment:
